@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-ink text-ivory font-sans antialiased;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+  }
+
+  ::selection {
+    background: rgba(201, 149, 58, 0.35);
+    color: #fff;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-ink;
+  }
+}
+
+@layer components {
+  .gold-text {
+    background: linear-gradient(
+      100deg,
+      #a87a2c 0%,
+      #f0dda0 22%,
+      #c9953a 45%,
+      #fbf6e7 60%,
+      #b8862b 80%,
+      #e8c871 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gold-text-animated {
+    @apply gold-text animate-shimmer;
+  }
+
+  .gold-divider {
+    @apply h-px w-24 bg-gradient-to-r from-transparent via-gold-400 to-transparent;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide text-ink transition duration-300 ease-out;
+    background: linear-gradient(135deg, #f0dda0 0%, #dcb24f 45%, #a87a2c 100%);
+  }
+
+  .btn-gold:hover {
+    @apply -translate-y-0.5 shadow-gold;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold-400/50 px-7 py-3.5 text-sm font-semibold tracking-wide text-gold-200 transition duration-300 ease-out hover:-translate-y-0.5 hover:border-gold-300 hover:bg-gold-400/10 hover:text-gold-100;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-white/10 bg-gradient-to-b from-navy-800/80 to-ink-soft/90 shadow-card transition duration-500 ease-out;
+  }
+
+  .section-eyebrow {
+    @apply mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-gold-400;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
