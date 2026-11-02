@@ -17,8 +17,8 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-12 lg:gap-12">
-        <div className="animate-fade-up lg:col-span-7">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-12 lg:items-start lg:gap-12">
+        <div className="animate-fade-up lg:col-span-7 lg:pt-4">
           <p className="inline-flex items-center gap-3 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.25em] text-gold-200">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-300" aria-hidden="true" />
             {profile.designation}
