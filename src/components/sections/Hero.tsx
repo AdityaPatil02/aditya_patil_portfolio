@@ -89,15 +89,14 @@ export default function Hero() {
               width={413}
               height={472}
               fetchPriority="high"
-              className="aspect-[4/5] w-full object-cover object-top transition duration-700 hover:scale-[1.03]"
+              className="aspect-square w-full object-cover object-top transition duration-700 hover:scale-[1.03]"
             />
             <div
               className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"
               aria-hidden="true"
             />
           </div>
-          <div className="mx-auto mt-8 h-10 w-px bg-gradient-to-b from-gold-400/70 to-transparent sm:mt-10" aria-hidden="true" />
-          <div className="flex flex-col items-center gap-5 text-center">
+          <div className="mt-7 flex flex-col items-center gap-5 text-center">
             <p className="gold-text inline-block pb-1 font-display text-2xl font-semibold uppercase leading-snug tracking-[0.12em] sm:text-3xl">
               Founder of PATIL GROUPS
             </p>
