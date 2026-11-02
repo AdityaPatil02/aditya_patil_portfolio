@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate flex min-h-screen items-center overflow-hidden pb-16 pt-32 sm:pt-36 lg:pb-24"
+      className="relative isolate flex items-center overflow-hidden pb-16 pt-24 sm:pt-28 lg:pb-24"
     >
       <div
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(201,149,58,0.22),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(28,41,68,0.9),transparent_60%)]"
@@ -96,11 +96,11 @@ export default function Hero() {
               aria-hidden="true"
             />
           </div>
-          <div className="mt-12 flex flex-col items-center gap-4 text-center sm:mt-14">
+          <div className="mt-8 flex flex-col items-center gap-4 text-center sm:mt-10">
             <p className="gold-text inline-block pb-1 font-display text-2xl font-semibold uppercase leading-snug tracking-[0.12em] sm:text-3xl">
               Founder of PATIL GROUPS
             </p>
-            <div className="mt-2 rounded-2xl border border-gold-400/30 bg-navy-900/90 px-5 py-3 shadow-card">
+            <div className="rounded-2xl border border-gold-400/30 bg-navy-900/90 px-5 py-3 shadow-card">
               <p className="font-display text-xl font-semibold text-gold-200">Infosys Limited</p>
               <p className="text-xs uppercase tracking-[0.2em] text-stone-400">System Engineer Trainee</p>
             </div>
