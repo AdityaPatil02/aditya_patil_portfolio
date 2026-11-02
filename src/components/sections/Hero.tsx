@@ -96,9 +96,14 @@ export default function Hero() {
               aria-hidden="true"
             />
           </div>
-          <div className="mt-8 flex flex-col items-center gap-4 text-center sm:mt-10">
+          <div className="mx-auto mt-8 h-10 w-px bg-gradient-to-b from-gold-400/70 to-transparent sm:mt-10" aria-hidden="true" />
+          <div className="flex flex-col items-center gap-5 text-center">
             <p className="gold-text inline-block pb-1 font-display text-2xl font-semibold uppercase leading-snug tracking-[0.12em] sm:text-3xl">
               Founder of PATIL GROUPS
+            </p>
+            <p className="max-w-md text-sm leading-relaxed text-stone-400 sm:text-base">
+              PATIL GROUPS is the embodiment of my entrepreneurial vision: a foundation for the businesses I intend to
+              build and the ambitions I am working toward for the years ahead.
             </p>
             <div className="rounded-2xl border border-gold-400/30 bg-navy-900/90 px-5 py-3 shadow-card">
               <p className="font-display text-xl font-semibold text-gold-200">Infosys Limited</p>
